@@ -1,0 +1,58 @@
+//1st method---------
+// nested loop
+// n*n = n^2 time complexity
+
+var i ;
+var num = 5 ;
+var space = "&nbsp;&nbsp;" ;                          // double space needed but  in  another language run in IDE , single space is okay .
+var star = "* "
+
+for (i =0 ; i<= num ; i++){                          //This is for  Row
+    for (j =1; j <= (num-i) ; j++)                   // This is for column
+    {
+        document.write(star);
+    }
+
+    for (k = 1 ; k<=i ; k++)                         //This is also for column
+    {
+        document.write( space); 
+    }
+    document.write("<br>") ;
+} 
+
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+//2nd method
+// single loop
+// n time complexity
+
+
+var i;
+var star = "* "                                                         //has a space after *
+var space = "&nbsp; &nbsp;"                                            // double space    
+var num = 5
+for (i=1 ; i<=num ; i++){
+
+    document.write(space.repeat(num-i)+star.repeat(i )) ;                //used repeat method  to iterate n times
+    document.write("<br>");
+
+}
+
+
+
+
+
+/* Output will be - 
+        *
+      * *
+    * * *
+  * * * *
+* * * * *  
+
+*/
+
+
+
+
