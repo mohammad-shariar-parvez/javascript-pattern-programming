@@ -12,3 +12,23 @@ for (row = 1; row <= 5; row++) {
     document.write("<br>");
 
 }
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+// WITHOUT TAkING COLUMN AT FIRST DRAW , Didn't take this logic like bwfore - ( ((col==1 || col ==5 ) &&(row!=2 && row!=4 && row!=3)) || 
+
+// var row;
+// var col;
+
+// for (row = 1; row <= 5; row++) {
+//     for (col = 1; col <= 5; col++) {
+//         if ((row == 1 && (col == 1 || col == 5)) || (row == 2 && (col == 2 || col == 4)) || (row == 3 && (col == 3)) || (row == 4 && (col == 4 || col == 2) || (row == 5 && (col == 1 || col == 5))))
+//             document.write("*");
+//         else
+//             document.write("&nbsp;" + "&nbsp;")
+
+//     }
+//     document.write("<br>");
+
+// }
