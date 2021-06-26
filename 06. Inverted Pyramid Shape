@@ -32,8 +32,8 @@ for (i = 0 ; i<num ; i++){        //alternative (i = 1 ; i<=num ;  i++)
 // n time complexity
 
 var i ;
-var star = " *";              //space before *
-var space = " &nbsp" ;   // space before &nbsp
+var star = "* ";              //space before *
+var space = "&nbsp" ;   // space before &nbsp
  
 num = 5 ;
 
@@ -53,3 +53,6 @@ for ( i = 0 ; i <num ; i++){
     *
  
 */
+
+
+
