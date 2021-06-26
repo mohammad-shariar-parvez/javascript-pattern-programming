@@ -1,0 +1,17 @@
+var row;
+var col;
+
+for (row =1 ; row<=7 ; row++)                                  // This loop is for row
+{
+    for (col =1 ; col <=5 ; col++)                               // At first we have to print the column
+    {
+        if ( ((col==1 )&& (row !=1 && row !=7)) || ((row==1 || row==7) && (col>1) ))         //This statement for print column(*) in precise position.     
+        document.write("*");                                                                 // by logical operator ( || ) & parenthesees, statement devided into 2 parts(column &  rows).
+        else                                                                                 // Then two parts will be devided into more logical parts
+        document.write("&nbsp;" +"&nbsp;" )
+
+    }
+    document.write("<br>");
+    
+
+}
