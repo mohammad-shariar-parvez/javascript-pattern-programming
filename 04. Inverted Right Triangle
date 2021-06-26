@@ -1,0 +1,41 @@
+//1st method---------
+// nested loop
+// n*n = n^2 time complexity
+
+var i;
+var j;
+var star = "* ";
+var space = "&nbsp;" ;
+var num = 5;
+
+for (i = 0 ; i<num ; i++)   // here i =0 so that,at first iteration j<=(num-i) can execute  full time i mean * = 5 times. 
+                            //beside be careful about  itaration time of i . another point is ,if we took i<=num,(0,1,2,3,4,5) 
+                             //then we could get same result at a=5. because for that at last iteration j<=(num-i)= 0 . so  there  no * was printed .
+{
+    for (j =1 ; j<=(num-i);j++)
+    {
+        document.write(star);
+
+    }
+    document.write("<br>");
+
+}
+
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+//2nd method
+// single loop
+// n time complexity
+
+var i;
+var star = "* ";                            //a space after *
+var num = 5;
+
+for ( i =0 ; i <= num ; i++ )
+{
+    document.write(star.repeat(num-i));
+    document.write("<br>");
+}
+
