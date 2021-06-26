@@ -1,0 +1,14 @@
+var row;
+var col;
+
+for (row = 1; row <= 5; row++) {
+    for (col = 1; col <= 5; col++) {
+        if (((col == 1 || col == 5) && (row != 2 && row != 4 && row != 3)) || ((row == 2 && (col == 2 || col == 4)) || (row == 3 && (col == 3)) || (row == 4 && (col == 4 || col == 2))))
+            document.write("*");
+        else
+            document.write("&nbsp;" + "&nbsp;")
+
+    }
+    document.write("<br>");
+
+}
