@@ -1,0 +1,55 @@
+//1st method---------
+// nested loop
+// n*n = n^2 time complexity
+
+var i;
+var j;
+var k ;
+var num = 5;
+var space = " &nbsp;";      // space needed before &nbsp
+ 
+for (i = 0 ; i<num ; i++){        //alternative (i = 1 ; i<=num ;  i++)
+
+    for(k= 1 ; k <=i ; k++)      // alternative (k= 1 ; k <=i-1 ; k++) 
+    
+    {
+        document.write(space); 
+
+    }
+    for (j=1 ; j<=(num-i);j++)
+    {
+        document.write(" *");     // space before *   
+    }      
+    document.write("<br>");
+
+}
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+//2nd method
+// single loop
+// n time complexity
+
+var i ;
+var star = " *";              //space before *
+var space = " &nbsp" ;   // space before &nbsp
+ 
+num = 5 ;
+
+for ( i = 0 ; i <num ; i++){
+    document.write(space.repeat(i) + star.repeat(num-i));
+    document.write("<br>");
+}
+
+
+
+
+/* Output will be -
+* * * * *
+ * * * *
+  * * *
+   * *
+    *
+ 
+*/
