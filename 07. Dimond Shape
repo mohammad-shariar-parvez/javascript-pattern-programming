@@ -1,0 +1,29 @@
+var i;
+var num = 5;
+var star="* ";
+var space = "&nbsp" ;
+
+for (i =1 ; i<=num ; i++){
+    document.write( space.repeat(num-i)+star.repeat(i));
+    document.write("<br>");
+}
+for (i=1 ; i <num ; i++){
+    document.write(space.repeat(i) +star.repeat(num-i));
+    document.write("<br>");
+}
+
+
+
+/* Output will be -
+
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+ * * * *
+  * * *
+   * *
+    * 
+    
+*/
