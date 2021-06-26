@@ -40,11 +40,12 @@ for( i =1 ; i<=n ; i++ ){
 
 
 
-
-//Output will be - 
+/* Output will be -
 
 *
 **
 ***
 ****
 *****
+ 
+*/
