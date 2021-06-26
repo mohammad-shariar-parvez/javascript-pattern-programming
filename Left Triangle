@@ -30,16 +30,15 @@ for (i =0 ; i<= num ; i++){                          //This is for  Row
 
 
 var i;
-var star = "* "                                                         //has a space after *
-var space = "&nbsp; &nbsp;"                                            // double space    
+var star = "* "                       //has a space after *
+var space = "&nbsp; &nbsp;"
 var num = 5
 for (i=1 ; i<=num ; i++){
 
-    document.write(space.repeat(num-i)+star.repeat(i )) ;                //used repeat method  to iterate n times
+    document.write(space.repeat(num-i)+star.repeat(i )) ;
     document.write("<br>");
 
 }
-
 
 
 
