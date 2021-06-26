@@ -2,24 +2,25 @@
 // nested loop
 // n*n = n^2 time complexity
 
-var i ;
-var num = 5 ;
-var space = "&nbsp;&nbsp;" ;                          // double space needed but  in  another language run in IDE , single space is okay .
-var star = "* "
+var i;
+var j ;
+var num =5;
+var space = "&nbsp; &nbsp;"        // double space needed but  in  another language run in IDE , single space is okay .
 
-for (i =0 ; i<= num ; i++){                          //This is for  Row
-    for (j =1; j <= (num-i) ; j++)                   // This is for column
+for ( i = 1 ; i<=num ; i++){       //This is for  Row
+
+    for (k = 1 ; k<=(num-i) ; k++)      // This is for column
     {
-        document.write(star);
-    }
+        document.write(space);
 
-    for (k = 1 ; k<=i ; k++)                         //This is also for column
+    }
+    for (j=1 ; j<=(i);j++)    //This is also for column
     {
-        document.write( space); 
-    }
-    document.write("<br>") ;
-} 
+        document.write("* ");        
+    }  
+    document.write("<br>");       
 
+}
 
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
