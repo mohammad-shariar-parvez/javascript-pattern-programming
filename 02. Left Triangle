@@ -41,6 +41,30 @@ for (i=1 ; i<=num ; i++){
 
 }
 
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+// 3rd approach - console.log()   //Where itarate  exicution goes to next line
+
+
+var i;
+var icon = " ";   // single  space
+var num = 5;
+var space = "";
+var triangle = "";
+var final = "";
+
+
+for (i = 1; i <= num; i++) {       //This is for  Row
+
+
+	space = icon.repeat(num - i)
+	triangle += "Y";
+	final = space + triangle
+	console.log(final)
+
+}
+
 
 
 
